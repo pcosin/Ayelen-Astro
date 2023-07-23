@@ -1,0 +1,145 @@
+<div class="aviso-cookies" id="aviso-cookies">
+    <h3 class="titulo">Cookies</h3>
+    <p class="parrafo">
+      Utilizamos cookies propias y de terceros para mejorar nuestros servicios.
+    </p>
+    <button class="boton" id="btn-aceptar-cookies">De acuerdo</button>
+    <a class="enlace" href="aviso-cookies.html">Aviso de Cookies</a>
+  </div>
+  <footer>
+    <div class="footer-wrapper">
+      <div class="footer-text">
+        <h3>
+          Me encontrás en: Rioja 1315. Primer piso. Rosario. Santa Fe. Teléfono 0341 3052314
+        </h3>
+      </div>
+      <div class="footer-politica">
+        <a href="./aviso-cookies.html"> <p>Politica de privacidad</p></a>
+        <a href="./aviso-cookies.html"><p>Política de cookies</p></a>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    /* ------------------- */
+/* Footer  */
+/* ------------------- */
+
+.footer-wrapper {
+  width: min(100% - 2rem, 1440px);
+  margin-inline: auto;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  font-size: 1.4rem;
+  color: var(--color-blue);
+  position: relative;
+}
+
+.footer-text h3 {
+  position: relative;
+  text-align: center;
+  font-family: "Sedan SC Regular";
+}
+
+.footer-text h3::before {
+  content: "";
+  position: absolute;
+  background-color: var(--color-blue);
+  width: 100%;
+  height: 3px;
+  top: -15px;
+  left: 0;
+}
+
+.footer-text h3::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-blue);
+  width: 100%;
+  height: 3px;
+  bottom: -15px;
+  left: 0;
+}
+.footer-politica {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  color: var(--color-grey-blue);
+}
+
+/* ------------------- */
+/* Cookies   */
+/* ------------------- */
+
+.aviso-cookies {
+  display: none;
+  background: #fff;
+  padding: 20px;
+  width: calc(100% - 40px);
+  max-width: 300px;
+  line-height: 150%;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 100;
+  padding-top: 60px;
+  box-shadow: 0px 2px 20px 10px rgba(222, 222, 222, 0.25);
+  text-align: center;
+}
+
+.aviso-cookies.activo {
+  display: block;
+}
+
+.aviso-cookies .titulo,
+.aviso-cookies .parrafo {
+  margin-bottom: 15px;
+}
+
+.aviso-cookies .boton {
+  width: 100%;
+  background: #595959;
+  border: none;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 15px 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.aviso-cookies .boton:hover {
+  background: #000;
+}
+
+.aviso-cookies .enlace {
+  color: #4dbfff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.aviso-cookies .enlace:hover {
+  text-decoration: underline;
+}
+
+.fondo-aviso-cookies {
+  display: none;
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+  </style>

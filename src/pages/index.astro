@@ -1,81 +1,748 @@
 ---
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Aye1 from '../assets/img/img_home_Aye.webp'; 
+import Aye2 from '../assets/img/home-asesoramiento.webp'; 
+import Lapicera from '../assets/img/home-3.webp'; 
+import LogoWhiteWebp from '../assets/img/logoWhite.webp'
+import LogoWhitePng from '../assets/img/logoWhite.png'
+import '../styles/main.css'
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Ayelén María Gaitán - Abogada">
+	<Nav />
 	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
+		<section class="hero flex-hero">
+			<div class="hero-inside grid-hero">
+			  <div class="hero-text">
+				<h2 class="first-text">
+				  ¿Qué tienen en común los emprendedores y las empresas que quieren desarrollar un
+				  negocio sostenible y en regla?
+				</h2>
+				<h2 class="second-text">
+				  Ambos necesitan diseñar y ejecutar una gestión legal eficiente para generar proyectos
+				  comerciales confiables, seguros y blindados jurídicamente.
+				</h2>
+			  </div>
+			  <div class="hero-img">
+				<picture>
+				  <source srcset={LogoWhiteWebp} type="image/webp" />
+				  <img id="img-fade" src={LogoWhitePng} alt="logo en blanco" />
+				</picture>
+			  </div>
+			</div>
+		  </section>
+		  <section class="sub-hero scroll">
+			<div class="sub-hero-wrapper">
+			  <div class="grey-box">
+				<div>
+				  <p class="grey-box-p">
+					La mayoría de los emprendedores, por desconocimiento o falta de tiempo, no
+					consideran los aspectos jurídicos a la hora de ponerse en marcha.
+				  </p>
+				</div>
+				<div>
+				  <p class="grey-box-p">
+					Muchas empresas no quieren ocupar tiempo y recursos propios en tener su gestión
+					administrada de forma eficiente.
+				  </p>
+				</div>
+				<div class="grey-box-p-last">
+				  <p class="grey-box-p">
+					En cualquier caso, necesitan asesoría, acompañamiento y una gestión integral de
+					trámites por parte de un profesional especializado y experimentado.
+				  </p>
+				</div>
+			  </div>
+			</div>
+		  </section>
+		  <section class="presentation scroll">
+			<div class="presentation-wrapper flex">
+			  <div class="wrapper-text">
+				<h3 class="title-presentation">
+				  Soy Ayelén María Gaitán, <br />
+				  abogada y emprendedora.
+				</h3>
+				<p>
+				  Ejerzo la profesión de forma independiente. Soy docente en la Facultad de Derecho de
+				  la Universidad Nacional de Rosario; además, soy mediadora en lo civil y comercial.
+				</p>
+				<p>
+				  Estoy convencida de que quienes estamos en esta profesión no solo debemos ocuparnos de
+				  representar a clientes en juicios, sino poner la ingeniería jurídica a su alcance para
+				  crear valor.
+				</p>
+				<p>
+				  Mi objetivo es crear vínculos cercanos, asesorándolos y acompañándolos desde el primer
+				  contacto.
+				</p>
+				<div class="button button-margin-top">
+				  <a href="sobre-mi.html"> <button class="btn">Esta soy yo</button></a>
+				</div>
+			  </div>
+			  <div class="wrapper-img">
+				<div class="img-first home__img">
+				  <img class="img-aye-1" src={Aye1} alt="Foto de Ayelén" />
+				</div>
+			  </div>
+			</div>
+		  </section>
+		  <section class="blue-title scroll">
+			<div class="blue-title-wrapper">
+			  <h3>
+				Existen muchos aspectos legales capaces de robarte el sueño.<br />
+				Postergarlos, ignorarlos o delegarlos en alguien inexperto <br />
+				puede traerte graves consecuencias.
+			  </h3>
+			</div>
+		  </section>
+		  <section class="section-cards scroll">
+			<div class="wrapper-cards">
+			  <div class="cards">
+				<div class="card">
+				  <p>
+					Cualquier actividad comercial está asociada a un entramado de obligaciones y leyes
+					que hay que conocer para que funcione correctamente.
+				  </p>
+				</div>
+				<div class="card">
+				  <p>
+					No darle la debida prioridad desde el inicio, puede ser el certificado de defunción
+					de tu proyecto.
+				  </p>
+				</div>
+				<div class="card">
+				  <p>
+					Los negocios vulnerables son aquellos que no contemplan en su plan de acción todo
+					tipo de contingencias, entre ellas, las legales.
+				  </p>
+				</div>
+				<div class="card">
+				  <p>
+					La burocracia es un laberinto complejo que está muy instalado en nuestra cultura y
+					en los estamentos regulatorios, y es muy difícil atravesarlo con éxito.
+				  </p>
+				</div>
+				<div class="card">
+				  <p>
+					Contar con un dispositivo eficiente de control y seguimiento de todas las gestiones
+					de tu negocio, demanda mucho tiempo y recursos.
+				  </p>
+				</div>
+			  </div>
+	
+			  <div class="text-center button btn-contactame-index">
+				<a href="contacto.html"><button class="btn">Contactame</button></a>
+			  </div>
+			</div>
+		  </section>
+		  <section class="home-text-separator">
+			<div class="home-text-wrapper">
+			  <h3>
+				Dedicate a tu negocio con tranquilidad, seguridad y confianza, <br />
+				mientras yo pongo mi experiencia para blindarlo. <br />Te presento mi oferta de
+				servicios. <br />
+				(En la provincia de Santa Fe)
+			  </h3>
+			</div>
+		  </section>
+		  <section class="section-asesoramiento scroll">
+			<span class="shadow"> </span>
+			<div class="asesoramiento-wrapper flex">
+			  <span class="separator"></span>
+			  <div class="wrapper-img">
+				<div class="img-first home__img">
+				  <img
+					class="img-aye-1"
+					src={Aye2}
+					alt="Foto de Ayelén"
+				  />
+				</div>
+			  </div>
+			  <div class="wrapper-text">
+				<h3 class="title-asesoramiento">Asesoramiento a emprendedores</h3>
+				<p>
+				  Emprender un viaje hacia el negocio propio es el sueño de muchos. Sin embargo, es un
+				  camino lleno de obstáculos. Esto puede resultar abrumador.
+				</p>
+				<p>
+				  <strong
+					>Contar con la asesoría legal y el acompañamiento de un profesional experimentado,
+					garantiza que te inicies con paso firme.
+				  </strong>
+				</p>
+				<p>Te preguntarás, ¿cómo puedo ayudarte?</p>
+				<p>
+				  Conociendo tu caso particular, podremos determinar la estructura jurídica adecuada,
+				  redactar y revisar contratos, proteger tu marca comercial.
+				</p>
+				<div class="button button-margin-top">
+				  <a href="sobre-mi.html"><button class="btn">Trabajemos juntos</button></a>
+				</div>
+			  </div>
+			</div>
+		  </section>
+		  <span class="shadow-2"> </span>
+	
+		  <section class="section-asesoramiento section-margin scroll">
+			<span class="shadow-second-top"> </span>
+	
+			<div class="asesoramiento-wrapper flex">
+			  <div class="wrapper-text">
+				<h3 class="title-asesoramiento">Trámites para empresas y emprendimientos</h3>
+				<p>
+				  Gestionar y administrar los trámites de forma ordenada y eficiente es un dolor de
+				  cabeza.
+				</p>
+				<p>Ya sabés cómo es este asunto.</p>
+				<p>Entrás en la dimensión desconocida, puede pasar cualquier cosa…</p>
+				<p>
+				  «Ese no es el formulario». <br />«Hoy no ingresamos expedientes».<br />
+				  «Faltó una firma».<br />
+				  «¿Trajo la copia certificada?». <br />«Debe abonar las tasas y adjuntar los
+				  comprobantes».
+				</p>
+				<p><strong>Conozco BIEN ese laberinto y te aseguro que NO me pierdo. </strong></p>
+				<p>
+				  Desde hace varios años me encargo de llevar tranquilidad a quienes me confían y
+				  delegan esta tarea.
+				</p>
+				<ul class="ul-punto">
+				  <li>Trámites ante el Registro Público para sociedades.</li>
+				  <li>
+					Trámites ante la Inspección General de Personas Jurídicas para sociedades por
+					acciones, asociaciones civiles y fundaciones.
+				  </li>
+				</ul>
+				<div class="button button-margin-top">
+				  <a href="sobre-mi.html"> <button class="btn">Dejá que te ayude</button></a>
+				</div>
+			  </div>
+			  <div class="separator-2"></div>
+	
+			  <div class="wrapper-img">
+				<div class="img-first home__img">
+				  <img
+					class="img-aye-1 img-asesoramiento-2"
+					src={Lapicera}
+					alt="Foto de una lapicera"
+				  />
+				</div>
+			  </div>
+			</div>
+		  </section>
+		  <span class="shadow-second-bottom"> </span>
+	
+		  <section class="section-slider scroll">
+			<h3 class="title-slider">Mirá lo que dicen de mí</h3>
+			<div class="cards-slider">
+			  <div class="card-slider">
+				<p>
+				  Contacté a Ayelén como profesional. Fue para realizar un contrato societario. Me sentí
+				  muy cómoda con su trato, su profesionalismo y logró resolver ambas causas. La
+				  recomiendo como profesional por su prolijidad y conocimiento en su área.
+				</p>
+				<p>Virginia Cerra</p>
+			  </div>
+			  <div class="card-slider">
+				<p>
+				  Ayelén es una excelente profesional, con una formación específica y profunda en las
+				  áreas de las que se ocupa, y muy comprometida. Me asesoró desde los inicios de mi
+				  emprendimiento, se ocupó de la formación de mi SRL y me ha asesorado en cada conflicto
+				  legal que se me ha presentado, siendo muy resolutiva. ¡La recomiendo 100 x 100!
+				</p>
+				<p>Bárbara Tausía</p>
+			  </div>
+			  <div class="card-slider">
+				<p>
+				  Ayelén se esmeró para que el trámite ante la Inspección General de Personas Jurídicas
+				  de Santa Fe, que teníamos que realizar desde nuestra institución, saliera en tiempo y
+				  forma. Nos acompañó en todo momento y nos brindó la asesoría que necesitábamos.
+				</p>
+				<p>Comisión directiva de la Casa del artista plástico de Rosario.</p>
+			  </div>
+			</div>
+		  </section>
+		  <section class="conversemos scroll">
+			<div class="blue-title-wrapper-conversemos">
+			  <h3>
+				Mi objetivo como emprendedora es ayudarte y acompañarte a llevar adelante tus
+				actividades comerciales de forma segura, sin sobresaltos y blindadas legalmente.<br />
+				Tomá las riendas de tu negocio y ocupate de que funcione.
+			  </h3>
+	
+			  <h3>Olvidate de los aspectos legales.</h3>
+			  <h3>De eso me encargo yo.</h3>
+	
+			  <div class="text-center button">
+				<a class="btn btn-conversemos" href="contacto.html">Conversemos</a>
+			  </div>
+			</div>
+		  </section>
 	</main>
+	<Footer />
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
+	* ------------------- */
+/* Hero     */
+/* ------------------- */
+
+.hero {
+  margin-top: 5rem;
+  background-repeat: no-repeat;
+  height: 500px;
+  background-size: cover;
+}
+
+.flex-hero {
+  display: flex;
+  align-items: center;
+}
+
+.grid-hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 10px;
+  align-items: center;
+}
+
+.hero-inside {
+  width: min(100% - 2rem, 1440px);
+  margin-inline: auto;
+}
+
+.hero-text {
+  padding: 1rem;
+  position: relative;
+  font-family: "Sedan Regular";
+}
+
+.hero-text::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 1px;
+  height: 90%;
+  bottom: 0;
+  left: -5px;
+}
+
+.hero-text .first-text {
+  font-size: 2.1rem;
+  margin-bottom: 1rem;
+  color: var(--color-ligth-blue);
+}
+
+.hero-text .second-text {
+  font-size: 1.6rem;
+  color: var(--color-white);
+}
+
+/* ------------------- */
+/* Sub Hero     */
+/* ------------------- */
+
+.sub-hero-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.grey-box {
+  background-color: #fff;
+  width: min(600px);
+  padding: 2rem;
+  z-index: 10;
+  margin-top: -30px;
+  box-shadow: 1px 1px 16px 0px #00000040;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.grey-box-p {
+  text-align: center;
+  color: var(--color-blue);
+  margin-bottom: 0.5rem;
+  padding-block: 0.5rem;
+  line-height: 22px;
+  position: relative;
+}
+
+.grey-box > div:last-child p::after {
+  border-bottom: none;
+}
+.grey-box-p::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid var(--color-blue);
+  width: 100%;
+  display: block;
+  bottom: -10px;
+  margin: 0 auto;
+}
+
+/* ------------------- */
+/* Presentation    */
+/* ------------------- */
+
+.presentation {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+.presentation-wrapper {
+  width: min(100% - 2rem, 1440px);
+  margin-inline: auto;
+  gap: 2rem;
+}
+
+.presentation-wrapper > * {
+  flex-basis: 100%;
+}
+
+.title-presentation {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--color-ligth-blue);
+  font-family: "Sedan SC Regular";
+}
+
+.wrapper-text {
+  padding-inline: 2rem;
+}
+.wrapper-text P {
+  color: var(--color-blue);
+  margin-bottom: 0.5rem;
+  padding-block: 0.5rem;
+  position: relative;
+  line-height: 22px;
+}
+
+.img-first {
+  padding-inline: 2rem;
+}
+
+.img-aye-1 {
+  width: min(100%, 550px);
+}
+
+/* ------------------- */
+/* Blue Title   */
+/* ------------------- */
+
+.blue-title {
+  background-color: var(--color-blue);
+}
+
+.blue-title-wrapper {
+  width: min(100% - 2rem, 1440px);
+  margin-inline: auto;
+}
+.blue-title-wrapper h3 {
+  color: var(--color-white);
+  font-family: "Sedan Regular";
+  line-height: 40px;
+  font-size: 1.6rem;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+}
+
+/* ------------------- */
+/* Section Cards  */
+/* ------------------- */
+
+.wrapper-cards {
+  width: min(100% - 2rem, 1440px);
+  margin-inline: auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  z-index: 10;
+  margin-top: -40px;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0px 0px 12px 4px #00000040;
+  display: grid;
+  place-items: center;
+  padding: 3rem 1.5rem;
+  transform-style: preserve-3d;
+  transform: rotatey(0deg) translatex(0px) translatey(0px);
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover {
+  transform: rotatey(45deg) translatex(0px) translatey(0px);
+}
+
+.card p {
+  color: var(--color-grey-blue);
+}
+
+/* ------------------- */
+/* Section text separator */
+/* ------------------- */
+
+.home-text-separator {
+  padding-block: 5rem;
+}
+
+.home-text-wrapper {
+  width: min(100% - 2rem, 1440px);
+  margin-inline: auto;
+}
+
+.home-text-wrapper h3 {
+  color: var(--color-blue);
+
+  font-family: "Sedan SC";
+
+  line-height: 29px;
+  font-size: 1.6rem;
+  text-align: center;
+  position: relative;
+}
+
+.home-text-wrapper h3::after {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid var(--color-blue);
+  width: 10%;
+  display: block;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.home-text-wrapper h3::before {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid var(--color-blue);
+  width: 10%;
+  display: block;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ------------------- */
+/* Asesoramiento */
+/* ------------------- */
+
+.section-asesoramiento {
+  margin-bottom: 3rem;
+}
+
+.asesoramiento-wrapper {
+  width: min(100% - 2rem, 1440px);
+  margin-inline: auto;
+  position: relative;
+}
+
+.asesoramiento-wrapper > * {
+  flex-basis: 100%;
+}
+
+.img-first {
+  z-index: 10;
+  position: relative;
+  align-self: center;
+}
+
+.wrapper-text p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.wrapper-text li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--color-blue);
+  font-family: Open-Sans;
+}
+
+.wrapper-text ul {
+  list-style-type: disc;
+  margin-left: 15px;
+}
+
+.title-asesoramiento {
+  color: var(--color-blue);
+  font-size: 1.7rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-family: "Sedan SC Regular";
+}
+
+.section-margin {
+  margin-block: 5rem;
+}
+
+.img-asesoramiento-2 {
+  width: min(100%, 500px);
+}
+
+/* Shadows */
+
+.shadow {
+  box-shadow: 0px 0px 12px 4px #00000025;
+  clip-path: inset(-15px 0px 20px 20%);
+  display: block;
+  padding-top: 2rem;
+}
+
+.shadow-2 {
+  box-shadow: 0px 0px 12px 4px #00000025;
+  clip-path: inset(-15px 0px 20px 20%);
+  display: block;
+  padding-bottom: 2rem;
+}
+
+.shadow-second-top {
+  box-shadow: 0px 0px 12px 4px #00000025;
+  clip-path: inset(-15px 30% 20px 0px);
+  display: block;
+  padding-top: 2rem;
+}
+
+.shadow-second-bottom {
+  box-shadow: 0px 0px 12px 4px #00000025;
+  clip-path: inset(-15px 30% 20px 0px);
+  display: block;
+  margin-top: -2rem;
+  padding-bottom: 5rem;
+}
+
+.separator {
+  position: absolute;
+  left: 20.5%;
+  transform: translate(-30%, -5.5%);
+  height: 115%;
+  box-shadow: -11px 0px 6px 4px #00000025;
+}
+
+.separator-2 {
+  position: absolute;
+  left: 71%;
+  transform: translate(-30%, -4.5%);
+  height: 111%;
+  box-shadow: -11px 0px 6px 4px #00000025;
+}
+
+/* ------------------- */
+/* Slider */
+/* ------------------- */
+
+.section-slider {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-slider {
+  text-align: center;
+  font-size: 1.9rem;
+  color: var(--color-white);
+  padding: 1.5rem;
+}
+
+.cards-slider {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+  position: relative;
+  width: min(100% - 2rem, 1440px);
+  margin-inline: auto;
+}
+
+.card-slider {
+  border-radius: 32px;
+  background-color:var(--color-white);;
+  padding: 1rem;
+  transition: all 150ms ease-in-out;
+}
+
+.card-slider:hover {
+  top: -3px;
+  left: -3px;
+  box-shadow: 3px 3px 15px 0px rgba(82, 82, 82, 0.85);
+}
+.card-slider:active {
+  top: 2px;
+  left: 2px;
+  box-shadow: inset 0 0 10px rgba(82, 82, 82, 0.85);
+}
+
+.card-slider p {
+  padding: 1rem;
+  line-height: 22px;
+  font-style: italic;
+  color: var(--color-grey-blue);
+}
+
+.cards-slider::after {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid var(--color-white);;
+  width: 20%;
+  display: block;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn-contactame-index {
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+}
+
+/* ------------------- */
+/* Conversemos   */
+/* ------------------- */
+
+.conversemos {
+  background-color: var(--color-blue);
+  padding-bottom: 4rem;
+}
+
+.blue-title-wrapper-conversemos {
+  width: min(100% - 2rem, 1440px);
+  margin-inline: auto;
+  padding-block: 3rem;
+}
+.blue-title-wrapper-conversemos h3 {
+  color: var(--color-white);
+  font-family: "Sedan Regular";
+  line-height: 40px;
+  font-size: 1.6rem;
+  text-align: center;
+  padding-block: 1rem;
+}
+
+.blue-title-wrapper-conversemos h3:first-child {
+  padding-block: 0;
+}
+
+.btn-conversemos {
+  color: var(--color-blue);
+  background-color: var(--color-white);;
+  margin-top: 2rem;
+  display: inline-block;
+}
+
+.btn-conversemos:hover {
+  color: var(--color-blue);
+}
 </style>
