@@ -7,7 +7,7 @@ import Aye2 from '../assets/img/home-asesoramiento.webp';
 import Lapicera from '../assets/img/home-3.webp'; 
 import LogoWhiteWebp from '../assets/img/logoWhite.webp'
 import LogoWhitePng from '../assets/img/logoWhite.png'
-import '../styles/main.css'
+
 ---
 
 <Layout title="Ayelén María Gaitán - Abogada">
@@ -285,60 +285,6 @@ import '../styles/main.css'
 </Layout>
 
 <style>
-	* ------------------- */
-/* Hero     */
-/* ------------------- */
-
-.hero {
-  margin-top: 5rem;
-  background-repeat: no-repeat;
-  height: 500px;
-  background-size: cover;
-}
-
-.flex-hero {
-  display: flex;
-  align-items: center;
-}
-
-.grid-hero {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-column-gap: 10px;
-  align-items: center;
-}
-
-.hero-inside {
-  width: min(100% - 2rem, 1440px);
-  margin-inline: auto;
-}
-
-.hero-text {
-  padding: 1rem;
-  position: relative;
-  font-family: "Sedan Regular";
-}
-
-.hero-text::before {
-  content: "";
-  position: absolute;
-  background-color: #fff;
-  width: 1px;
-  height: 90%;
-  bottom: 0;
-  left: -5px;
-}
-
-.hero-text .first-text {
-  font-size: 2.1rem;
-  margin-bottom: 1rem;
-  color: var(--color-ligth-blue);
-}
-
-.hero-text .second-text {
-  font-size: 1.6rem;
-  color: var(--color-white);
-}
 
 /* ------------------- */
 /* Sub Hero     */
@@ -644,10 +590,13 @@ import '../styles/main.css'
 /* Slider */
 /* ------------------- */
 
+
 .section-slider {
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+    background-image: url('../assets/img/back-slider.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
 
 .title-slider {
   text-align: center;
